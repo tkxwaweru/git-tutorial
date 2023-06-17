@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">Kindly take some time to fill in this form to help us improve our services to our customers.</p>
+    <form action="" method="" id="survey-form">
+      <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Enter your name" required></label>
+      <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="Enter your email address" required></label>
+      <label id="number-label" for="number">Age: <input type="number" id="number" name="number" min="10" max="100" placeholder="Enter your age" required></label>
+      <label for="dropdown">How satisfied are you with our services?
+        <select id="dropdown">
+        <option value=" ">(Select one)</option>
+        <option value="1">Not satisfied</option>
+        <option value="2">Satisfied</option>
+        <option value="3">Very satisfied</option>
+      </select>
+      </label>
+      <label>How likely are you to recommend our services to a friend?
+        <label for="option"><input type="radio" id="option" name="option" value="1">Unlikely</label>
+        <label for="option"><input type="radio" id="option" name="option" value="2">Likely</label>
+        <label for="option"><input type="radio" id="option" name="option" value="3">Highly Likely</label>
+      </label>
+      <label for="checks">What department's service do you think needs some improvement?
+        <label><input type="checkbox" id="checks" name="checks" value="Human Resources"> Human Resources</label>
+        <label><input type="checkbox" id="checks" name="checks" value="Marketing"> Marketing</label>
+        <label><input type="checkbox" id="checks" name="checks" value="Accountng"> Accounting</label>
+      </label>
+      <label>In your own words, let us know if there is anything else we could improve on:
+        <textarea rows="10" cols="50">
+      </textarea>
+      <input type="submit" id="submit" value="SUBMIT">
+    </form>
+  </body>
+</html>
